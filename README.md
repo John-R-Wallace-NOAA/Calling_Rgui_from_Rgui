@@ -15,7 +15,7 @@
      shell("echo quit('no',,FALSE) >> .Rprofile")
      
      
-     # -- Create run.bat and start it with the 'wait' argument. --
+     # -- Create run.bat, changing the Rgui path as needed, and start it with the 'wait' argument. --
      #        Remove the 'wait' argument (and comment out or remove the < shell("del run.bat") > line) for parallel processing.
      # Using the change directory (cd) line below allows running the next 4 lines of R code from any working directory,
      #    but the .Rprofile would already need to be setup in the destination directory. 
