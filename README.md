@@ -24,8 +24,8 @@
      shell("echo C:\\R\\R\\bin\\x64\\Rgui.exe --no-save --no-restore --no-site-file --no-environ > run.bat")
      shell("echo exit >> run.bat")
      shell("start /wait run.bat")
-     shell("del run.bat")
-     
+     shell("del run.bat") # Comment out this line for debugging
+      
      
      
      # Try a sequential loop
