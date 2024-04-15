@@ -1,8 +1,8 @@
 
 ### Calling Rgui from Rgui can be done in the following way:
      
-     # First note that the '>' operator in the Windows command shell, or Unix-a-likes shells, creates a file with echo(ed) line 
-     #    and the '>>' appends what is echo(ed) to the next line.
+     # First note that the '>' operator in the Windows command shell, or Unix-a-likes shells, creates a file with the echo(ed) line 
+     #    and '>>' appends what is echo(ed) to the next empty line.
      
      # -- Create the local initial file '.Rprofile' which Rgui.exe will run when started --
      # The listed packages below do not immediately load, but are standard in a normal Rgui startup.
@@ -16,8 +16,8 @@
      
      
      # -- Create run.bat and start it with the 'wait' argument. --
-     #        Remove the 'wait' argument (and comment out or remove < shell("del run.bat") >) for parallel  processing.
-     # Using the change directory line below allows running the next 4 lines of R code from any working directory,
+     #        Remove the 'wait' argument (and comment out or remove the < shell("del run.bat") > line) for parallel processing.
+     # Using the change directory (cd) line below allows running the next 4 lines of R code from any working directory,
      #    but the .Rprofile would already need to be setup in the destination directory. 
      #    If used, the Rgui line would then need a ">>" not the ">".
      # shell("echo cd C:\\A_folder_where_a_.Rprofile_is_already_setup > run.bat") 
@@ -59,7 +59,7 @@
      }
    
    
-    # Anything can be done inside of .Rprofile, e.g. source()ing and load()ing:
+    # Normal R operations can done inside of .Rprofile, e.g. source()ing and load()ing:
      
     # First save the simpleplot function to an R file
     shell("echo simplePlot = function(minX, maxX, col) { plot(minX:maxX, col = col) } > simplePlot.R")
