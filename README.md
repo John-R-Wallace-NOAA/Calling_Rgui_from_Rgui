@@ -81,4 +81,4 @@
     shell("echo exit >> run.bat")
     shell("start run.bat")
    
-   
+See this [script]https://github.com/John-R-Wallace-NOAA/FishNIRS/tree/main/R_Scripts/iPLS_Batch_Loop)for an example of stopping memory leaks  
