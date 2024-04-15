@@ -1,5 +1,5 @@
 
-### Calling Rgui from Rgui can be done in the following way:
+### Calling Rgui from Rgui, for batch R graphic capabilities, can be done in the following way:
      
      # First note that the '>' operator in the Windows command shell, or Unix-a-likes shells, creates a file with the echo(ed) line 
      #    and '>>' appends what is echo(ed) to the next empty line.
