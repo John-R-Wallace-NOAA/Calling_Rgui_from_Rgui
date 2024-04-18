@@ -81,5 +81,5 @@
     shell("echo exit >> run.bat")
     shell("start run.bat")
    
-See this [script]([https://github.com/John-R-Wallace-NOAA/FishNIRS/tree/main/R_Scripts/iPLS_Batch_Loop](https://github.com/John-R-Wallace-NOAA/FishNIRS/blob/main/R_Scripts/iPLS%2C%20NN%20Model%20Batch%20Self%20Call%20Loop.R)) for an example of stopping memory leaks by calling Rgui from Rgui, where R's 
+See this [script](https://github.com/John-R-Wallace-NOAA/FishNIRS/blob/main/R_Scripts/iPLS%2C%20NN%20Model%20Batch%20Self%20Call%20Loop.R) for an example of stopping memory leaks by calling Rgui from Rgui, where R's 
 memory garbage collection, gc(), and TensorFlow's, k_clear_session(), failed to do so.
