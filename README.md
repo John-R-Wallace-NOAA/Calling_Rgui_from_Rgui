@@ -1,8 +1,8 @@
 
 ### Calling Rgui from Rgui, for batch R graphic capabilities and stopping memory leaks, can be done in the following way:
      
-     # First note that the '>' operator in the Windows command shell, or Unix-a-likes shells, creates a file with the echo(ed)
-     #    line and '>>' appends what is echo(ed) to the next empty line.
+     # First note that the '>' operator in the Windows command shell, or Unix-a-likes shells, creates a file 
+     #     containing the echo(ed) line and '>>' appends what is echo(ed) to the next empty line.
      
      # -- Create the local initial file '.Rprofile' which Rgui.exe will run when started --
      # The listed packages below do not immediately load, but are standard in a normal Rgui startup.
